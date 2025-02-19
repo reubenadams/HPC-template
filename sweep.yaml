@@ -1,0 +1,9 @@
+program: main.py
+method: grid
+parameters:
+  hidden_width:
+    values: [32, 64]
+  learning_rate:
+    values: [0.001, 0.01]
+  batch_size:
+    values: [32, 64]
