@@ -169,5 +169,8 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
-wandb
-data
+wandb/
+data/
+models/
+
+wandb_api_key.txt
