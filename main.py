@@ -99,7 +99,7 @@ def train():
         
         print(f"Epoch {epoch}: Test Loss: {test_loss:.4f}, Accuracy: {accuracy:.4f}")
 
-    model_path = f"models/mlp_w{wandb.config.hidden_width}_lr{wandb.config.learning_rate}_b{wandb.config.batch_size}"
+    model_path = f"trained_models/mlp_w{wandb.config.hidden_width}_lr{wandb.config.learning_rate}_b{wandb.config.batch_size}"
     torch.save(model.state_dict(), model_path)
 
 if __name__ == "__main__":
