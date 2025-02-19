@@ -57,5 +57,5 @@ export WANDB_DIR=$TMPDIR/wandb
 export WANDB_API_KEY=$(head -n 1 $HOME/HPC-template/wandb_api_key.txt)  # Setting the API key for wandb.
 
 # Count is the number of runs to do. Syntax is `wandb agent username/project/sweep_id`, where sweep_id is what was returned by wandb.sweep
-wandb agent teamreuben/hpc-template/ted60tg3 --count 2
+wandb agent teamreuben/hpc-template/f5o22w7h --count 2
 # python main.py
