@@ -1,4 +1,4 @@
 torch
 wandb
-dtorchvision
+torchvision
 mnist1d
