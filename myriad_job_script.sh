@@ -31,8 +31,13 @@ date  # Print the current time.
 
 cd $HOME/HPC-template  # Get this by running pwd in terminal. It's just the name of your repo if you git cloned it into the home directory.
 
+python --version
 module load python/3.11.4
+python --version
+
+pip list
 source .venv/bin/activate
+pip list
 
 # This is software you don't need.
 # source $UCL_CONDA_PATH/etc/profile.d/conda.sh
@@ -52,5 +57,5 @@ export WANDB_DIR=$TMPDIR/wandb
 export WANDB_API_KEY=$(head -n 1 $HOME/HPC-template/wandb_api_key.txt)  # Setting the API key for wandb.
 
 # Count is the number of runs to do. Syntax is `wandb agent username/project/sweep_id`, where sweep_id is what was returned by wandb.sweep
-# wandb agent daguerro/cramming-pretrain/ted60tg3 --count 20
-python main.py
+wandb agent teamreuben/hpc-template/ted60tg3 --count 2
+# python main.py
