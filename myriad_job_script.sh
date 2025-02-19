@@ -31,12 +31,15 @@ date  # Print the current time.
 
 cd $HOME/HPC-template  # Get this by running pwd in terminal. It's just the name of your repo if you git cloned it into the home directory.
 
-python --version
+python3 --version
+which python3
 module load python/3.11.4
-python --version
+python3 --version
+which python3
 
 pip list
 source .venv/bin/activate
+python3 --version
 pip list
 
 # This is software you don't need.
@@ -58,4 +61,4 @@ export WANDB_API_KEY=$(head -n 1 $HOME/HPC-template/wandb_api_key.txt)  # Settin
 
 # Count is the number of runs to do. Syntax is `wandb agent username/project/sweep_id`, where sweep_id is what was returned by wandb.sweep
 wandb agent teamreuben/hpc-template/f5o22w7h --count 2
-# python main.py
+# python main.py  # TODO: Should this be python3?
