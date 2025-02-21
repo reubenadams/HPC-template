@@ -171,6 +171,6 @@ cython_debug/
 .pypirc
 wandb/
 data/
-models/
+trained_models/
 
 wandb_api_key.txt

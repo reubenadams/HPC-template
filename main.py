@@ -103,5 +103,5 @@ def train():
     torch.save(model.state_dict(), model_path)
 
 if __name__ == "__main__":
-    os.mkdir("trained_models")
+    os.makedirs("trained_models", exist_ok=True)
     train()
